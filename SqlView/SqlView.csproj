@@ -1,0 +1,82 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>Green.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\airplane_earth_global_globe_trave_icon.png" />
+    <None Remove="Resources\cancel_butt.png" />
+    <None Remove="Resources\check-mark.png" />
+    <None Remove="Resources\configuration_filter_options_preferences_icon.png" />
+    <None Remove="Resources\Delete_butt.png" />
+    <None Remove="Resources\edit_button.png" />
+    <None Remove="Resources\exit.png" />
+    <None Remove="Resources\first.png" />
+    <None Remove="Resources\folder_open_icon.png" />
+    <None Remove="Resources\go_bottom_icon.png" />
+    <None Remove="Resources\last.png" />
+    <None Remove="Resources\new_butt.png" />
+    <None Remove="Resources\next.png" />
+    <None Remove="Resources\prev.png" />
+    <None Remove="Resources\printer_error_icon.png" />
+    <None Remove="Resources\print_seeker_unemployee_icon.png" />
+    <None Remove="Resources\refresh_reload_icon.png" />
+    <None Remove="Resources\save_butt.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Green.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\airplane_earth_global_globe_trave_icon.png" />
+    <EmbeddedResource Include="Resources\cancel_butt.png" />
+    <EmbeddedResource Include="Resources\check-mark.png" />
+    <EmbeddedResource Include="Resources\configuration_filter_options_preferences_icon.png" />
+    <EmbeddedResource Include="Resources\Delete_butt.png" />
+    <EmbeddedResource Include="Resources\edit_button.png" />
+    <EmbeddedResource Include="Resources\exit.png" />
+    <EmbeddedResource Include="Resources\first.png" />
+    <EmbeddedResource Include="Resources\folder_open_icon.png" />
+    <EmbeddedResource Include="Resources\go_bottom_icon.png" />
+    <EmbeddedResource Include="Resources\last.png" />
+    <EmbeddedResource Include="Resources\new_butt.png" />
+    <EmbeddedResource Include="Resources\next.png" />
+    <EmbeddedResource Include="Resources\prev.png" />
+    <EmbeddedResource Include="Resources\printer_error_icon.png" />
+    <EmbeddedResource Include="Resources\print_seeker_unemployee_icon.png" />
+    <EmbeddedResource Include="Resources\refresh_reload_icon.png" />
+    <EmbeddedResource Include="Resources\save_butt.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Czemi.GridExcel" Version="1.0.3" />
+    <PackageReference Include="Czemi.GridRoutines" Version="1.3.0" />
+    <PackageReference Include="Czemi.LogicMethods" Version="1.1.0" />
+    <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.4" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
